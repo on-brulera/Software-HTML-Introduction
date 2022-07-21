@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--
+        form: engloba todo el formulario
+        label: nombre del campo a rellenar
+        input: campo a rellenar de un formulario
+        button: crea un boton para enviar los datos de un formulario
+    -->
+
+    <h1>FORMULARIOS</h1>
+    <h2>Formulario 1</h2>
+    <form action="enviar.html">
+        <!--Asociar un imput y un label-->
+        <!--Forma 1-->
+        <label for="name">Nombre</label>
+        <input id="name">
+        
+        <!--Forma 2-->
+        <label>Fecha Nacimiento
+            <input type="date">
+        </label>        
+        
+        <button>Enviar Formulario</button>
+    </form>
+    
+    <h2>Formulario 2 - Enviar</h2>
+    <form>
+        <input type="text">
+        <input type="button" value="Enviar"> <!--no envia datos-->
+        <input type="submit" value="Enviar"> <!--si envia datos y recarga la página-->
+        <button>Enviar</button><!--envia y recarga la página-->
+    </form>
+
+    <h2>Formulario 3 - Date</h2>
+    <form>
+        <input type="date"> <!--Fecha normal-->
+        <input type="datetime"> <!--Fecha en palabras-->
+        <input type="datetime-local"> <!--fecha con hora-->
+        <input type="time"><!--solo la hora-->
+        <input type="month">
+        <input type="week">
+        <input type="submit" value="Enviar"> <!--si envia datos y recarga la página-->        
+    </form>
+
+    <h2>Formulario 4 - Correos</h2>
+    <form>
+        <div>
+            <label>search
+                <input type="search">
+            </label>
+        </div>
+        <label>telefono
+            <input type="tel">
+        </label>
+        <label>email
+            <input type="email">
+        </label>
+        <label>password
+            <input type="password">
+        </label>
+        <label>url
+            <input type="url">
+        </label>
+    </form>
+
+
+    <h2>Formulario 5 - No categorizados</h2>
+    <form>
+        <input type="color" name="" id="">
+        <input type="number">
+        <input type="range" min="0" max="10" step="2">
+        <input type="text" name="" id="">
+        <input type="hidden" name=""> <!--muestra informacion dependiendo de la seleccion de los anteriores inputs-->
+        <input type="reset"> <!--alado del submit boton o tipe para restablecer todo el formulario-->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Formulario 5 - inputs de seleccion</h2>
+    <form>        
+        <label> hombre
+            <input type="radio" name="genero" value="masculino" checked>
+        </label>
+        <label name="genero"> mujer
+            <input type="radio" name="genero" value="femenino">
+        </label>
+        <label name="genero"> otro
+            <input type="radio" name="genero" value="otro">
+        </label>
+    </form>
+
+    <form>        
+        <label>
+            <input type="checkbox" name="languajes" value="html">
+            HTML
+        </label>
+        <label>
+            <input type="checkbox" name="languajes" value="css">
+            CSS
+        </label>
+        <label>
+            <input type="checkbox" name="languajes" value="java">
+            JAVA
+        </label>
+    </form>
+</body>
+</html>

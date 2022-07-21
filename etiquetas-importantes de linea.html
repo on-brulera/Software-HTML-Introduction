@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de linea</title>
+
+    <style>
+        span{
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        span: contenedor de linea, contiene pocas palabras
+        q: blockquote pero para linea, citas en linea
+        code: sirve para mostrar codigo. Con el codigo ASCI podemos encontrar los simbolos para representar un caracter
+    -->
+
+    <h1>TEXTO</h1>
+
+    <p>
+        Lorem ipsum, <span>sit amet consectetur</span> adipisicing elit. Quis, architecto eum rem aspernatur, consequuntur consequatur tempora ullam explicabo dignissimos quibusdam praesentium quidem ex doloribus deleniti tempore esse minima, dolore voluptatem.
+        <q cite="https://marvel.com">No me quiero ir señor Stark</q>
+    </p>
+
+    <h3>Escribir una <code>clase</code> en JAVA</h3>
+
+    <pre>
+        <code>
+            public class Estudiante : Persona {
+                protected String universidad;
+                protected String facultad;
+
+                public Estudiante(String nombres, String cedula, String universidad, String facultad){
+                    super (nombres,cedula);
+                    this.universidad = universidad;
+                    this.facultad = facultad;
+                }
+            }
+        </code>
+    </pre>
+</body>
+</html>

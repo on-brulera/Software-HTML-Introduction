@@ -109,5 +109,101 @@
             JAVA
         </label>
     </form>
+
+    <form>
+        <h3>Elementos seleccionables normal</h3>
+        <select name="Lenguajes">
+            <option value="python">PYTHON</option>
+            <option value="java">JAVA</option>
+            <option value="c#">C#</option>
+        </select>
+    </form>
+
+    <form>Elementos seleccionables avanzados</form>
+        <select name="mascotas">
+            <optgroup label="4 patas">
+                <option value="gato">Gato</option>
+                <option value="perro">Perro</option>
+                <option value="burro">burro</option>
+            </optgroup>
+            <optgroup label="aves">
+                <option value="loro">Loro</option>
+                <option value="paloma">Paloma</option>
+            </optgroup>
+            <optgroup label="otros">
+                <option value="vivora">Vivora</option>
+                <option value="armadillo">Armadillo</option>
+            </optgroup>
+        </select>
+    
+        <h3>DATALIST</h3>
+        <form>
+            <input type="list" list="mascotas">
+            <datalist id="mascotas">
+                <option value="perro">Perro</option>
+                <option value="loro"></option>
+                <option value="gato"></option>
+            </datalist>
+        </form>
+
+
+        <!--ELEMENTOS PARA AGRUPAR ELEMENTOS EN UN FORM
+        fieldset: agrupa
+        legend: nombre del conjunto del form
+        file: input para subir archivos
+        meter: muestra el valor de un rango
+        progress: representa el progreso de una tarea
+        textarea: no es necesario explicacion  :)-->
+        <h2>ELEMENTOS PARA FORMULARIOS</h2>
+        <form>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+                <label for="surname">Apellido</label>               
+            </fieldset>
+            <input type="file">
+            <label for="fuel">Combustible</label>
+            <meter id="fuel" min="0" max="100" value="50" low="30" high="75" optimum="50">               
+            </meter>
+            <label for="task">Tarea 1</label>
+            <progress id="task" max="100" value="10"></progress> 
+            <label for="message">Message</label>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+        </form>
+
+        <h2>ATRIBUTOS DE FORMULARIOS</h2>
+        <!--
+            placeholder: da pistas de introducción
+            required: campo obligatorio de llenar
+            readonly: campo solo de lectura
+            desabled: desabilita el campo
+        -->
+        <form>
+            <input type="text" placeholder="escribe tu nombre" required>
+            <input type="text" value="hola" readonly>
+            <select name="numbers" id="">
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+            </select>
+            <input type="number" disabled>
+            <input type="text">
+            <input type="submit">
+        </form>
+
+        <!--
+            get: envio URL
+            post: envio desde backend
+        -->
+        <h2>ENVIOS POST Y GET</h2>
+        <form action="enviar.html" method="GET">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name">
+            <label for="surname">Apellido</label>
+            <input type="text" id="surname" name="surname">
+            <input type="submit" value="enviar">
+        </form>
+
 </body>
 </html>

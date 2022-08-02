@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla</title>
+
+    <style>
+        td{
+            background-color: aquamarine;
+        }
+        col{
+            background-color: blue;
+        }
+    </style>
+
 </head>
 <body>
     <!--table-> encierra toda la tabla-->
@@ -15,13 +25,18 @@
     <!--Para seleccionar columnas de una tabla -> por cada etiqueta <col> se selecciona una columna-->
     <colgroup>
         <col>
-        <col>
+        <col span="4">
     </colgroup>
 
 
     <h1>Tabla</h1>
     <table border="solid">
         <caption>HORARIO DE CLASES</caption>
+        <colgroup>
+            <col>
+            <col>
+        </colgroup>
+        
         <thead>
             <tr>
                 <th></th>
@@ -89,7 +104,7 @@
         <tfoot>
             <tr>
                 <td>TOTAL DE ASIGNATURAS</td>
-                <td>12</td>
+                <td colspan="5">12</td>
             </tr>
         </tfoot>
     </table>

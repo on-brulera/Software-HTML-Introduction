@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <!--
+        imagenes vectorizadas SVG -> no pierden calidad (recomendada para logos)
+        png, jpg... mapa de bits -> convertirlas a vector siempre que sea posible
+        webp -> mapa de bits, para gift, png, jpg, pero los comprime más
+        se recomienda tener 2 imagenes: 1 para escritorio 1000 px o mas y 2 para movil 300px
+    -->
+</body>
+    <h1>CONTENIDO EMBEBIDO</h1>
+    <img src="./imagenes/Captura de pantalla (1009).png" alt="troleo facebook">
+    <img src="./imagenes/magpie.svg" alt="viva USA" width="1000" height="600">
+    <img src="./imagenes/Captura-de-pantalla-_2331_.webp" alt="bob esponja">
+
+    <!--cargar una imagen dependiendo del device pixel radio-->
+    <h2>Cargar imagen</h2>
+    <img srcset="imagenes/Captura de pantalla (346).png,
+    imagenes/Captura de pantalla (411).png 1x" alt="">
+</html>
